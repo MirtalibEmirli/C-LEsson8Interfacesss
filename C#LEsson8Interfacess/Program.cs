@@ -1,4 +1,43 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using C_LEsson8Interfacess.Models;
+using C_LEsson8Interfacess.Models2;
+
+
+Bank b1 = new Bank("ABB");
+
+
+Worker w1 = new Worker("Ali","aliyev","muhasibat",25,2500,"male");
+Worker w4 = new Worker("Aila","aliyev","IT",25,2700,"male");
+Worker w2 = new Worker("Alied","aliyev","muhasibat",25,2800,"male");
+Worker w3 = new Worker("Abila","aliyev","muhasibat",35,2900,"male");
+
+
+Client c1 = new Client("Ali1", "aliyev", "muhasibat", 25, 2500, "male");
+c1.credits = 500;
+Client c2 = new Client("Ali2", "aliyev", "neft", 25, 2500, "male"); c2.credits = 600;
+
+Client c3 = new Client("Ali3", "aliyev", "muhasibat", 25, 2500, "male"); c3.credits = 5000;
+
+Client c4 = new Client("Ali4", "aliyev", "muhasibat", 25, 2500, "male"); c4.credits = 7700;
+
+Manager m1 = new Manager("Adil", "aliyev", "muhasibat", 25, 2500, "male");
+Manager m2 = new Manager("Ali", "aliyev", "muhasibat", 25, 2500, "male");
+Manager m3 = new Manager("Alim", "aliyev", "muhasibat", 25, 2500, "male");
+Manager m4 = new Manager("Abid", "aliyev", "muhasibat", 25, 2500, "male");
+
+Ceo1 ce1 = new Ceo1("Abid", "aliyev", "muhasibat", 25, 2500, "male");
+Ceo1 ce2 = new Ceo1("Abid", "aliyev", "muhasibat", 25, 2500, "male");
+Ceo1 ce3 = new Ceo1("Abid", "aliyev", "muhasibat", 25, 2500, "male");
+Ceo1 ce4 = new Ceo1("Abid", "aliyev", "muhasibat", 25, 2500, "male");
+
+b1.Clients.Add(c1);
+b1.Clients.Add(c2);
+b1.Clients.Add(c3);
+b1.Clients.Add(c4);
+b1.ShowalClients();
+#region Notes
+
+
 /*Console.WriteLine("Hello, World!");
 string fgh = "A";
 Console.WriteLine(Environment.GetLogicalDrives().ToString);
@@ -110,6 +149,11 @@ class CustomerTest : ITypeDescribable
 }
  
  */
+
+/*
+CustomerTest c = new CustomerTest();
+
+CustomerTest.Description;
 interface ITypeDescribable
 {
     static abstract string Description { get; }
@@ -122,3 +166,6 @@ class CustomerTest : ITypeDescribable
     public static string Category => "Unit testing"; // Optional
 }
 
+*/
+
+#endregion
